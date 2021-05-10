@@ -1,13 +1,31 @@
 {
   "name": "first-vue3-library",
+  "description": "A simple vuejs Hello World plugin",
   "version": "0.1.0",
   "private": true,
+  "author": {
+    "name": "goodtong",
+    "email": "987717609@qq.com"
+  },
+  "repository": "https://github.com/goodtong/first-vue3-library",
+  "bugs": "https://github.com/goodtong/first-vue3-library/issues",
+  "keywords": [
+    "keywords",
+    "go",
+    "here"
+  ],
+  "license": "MIT",
+  "files": [
+    "dist/*"
+  ],
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
+    "build-library": "vue-cli-service build --target lib --name first-vue3-library ./src/components/element-plus/index.ts",
     "test:unit": "vue-cli-service test:unit",
     "lint": "vue-cli-service lint"
   },
+  "main": ".dist/first-vue3-library.common.js",
   "dependencies": {
     "core-js": "^3.6.5",
     "vue": "^3.0.0",
